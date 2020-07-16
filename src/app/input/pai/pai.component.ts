@@ -28,5 +28,4 @@ export class PaiComponent implements OnInit {
       
   }
   
-
 }

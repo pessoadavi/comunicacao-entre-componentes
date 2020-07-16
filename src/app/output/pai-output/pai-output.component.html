@@ -2,5 +2,9 @@
     <p>component pai2 usando @output. filho => pai</p>
     <!--    -->
     Mensagem: {{ messagem }}
-   <app-filho-output (mensagemEvento)="receberMensagem($event)"></app-filho-output>>
+
+    <!-- (valor da variavel emissora do comp. filho) = " método que atribui o valor do emissor filho
+          através do $evento e atribui para a variável do comp. pai (mensagem) que é interpolado
+          na linha 4 "   -->
+   <app-filho-output (mensagemEvento)="receberMensagem($event)"></app-filho-output>
 </div> 

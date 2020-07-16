@@ -14,8 +14,8 @@ export class PaiOutputComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  receberMensagem($event: string) {
-    this.messagem = $event;
-  }
+  receberMensagem($event: string) {   // Método que recebe o valor do evento ocorrido no comp. filho
+    this.messagem = $event;           // valor de "mensagem" (que era oi mundo) mudou para "eu mudei" 
+  }                                   // que veio do comp. filho 
 
 }

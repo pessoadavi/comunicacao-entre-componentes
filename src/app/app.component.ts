@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from './ComunicationByService/service/shared.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'comunicacao-entre-componentes';
+
+  logic: boolean = false;
+
+  constructor(private sharedService :SharedService) { }
+
+  ngOnInit(): void {
+    this.sharedService.currentLogic.subscribe(logic =>
+      this.logic = logic);
+    
+  }
+
+  
 }

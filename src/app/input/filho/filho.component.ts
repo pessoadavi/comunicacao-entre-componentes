@@ -7,8 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FilhoComponent implements OnInit {
 
-  @Input()
-  mensagem: string;
+  @Input()                  // Decorator que indica que a variável receberá a informação do componente pai 
+  mensagem: string;         // Variável que receberá a informação 
 
   texto: string = "Diga"
   

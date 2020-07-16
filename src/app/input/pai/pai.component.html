@@ -1,7 +1,8 @@
 
 <div class="comppai">
     <p>component pai-a usando @input.  pai => filho</p>
-    <!--    -->
+    <!-- property binding que passa a informação do c. pai para o c. filho
+         [ variavel do comp. filho ] = "valor da variável do comp. pai"   -->
  <app-filho-input (click)="clique()" [mensagem]="mensage" ></app-filho-input>
     <p [hidden]="!logic" >Apareci!!!</p>
 </div> 

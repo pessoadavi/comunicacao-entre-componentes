@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "comunicacao-entre-componentes"
+    }
+  },
+  "defaultProject": "comunicacao-entre-componentes",
+  "cli": {
+    "analytics": "02f5647c-2ad3-4997-8048-a3d9308296a9"
+  }
 }
